@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# #!flask/bin/python
+
 from flask import Flask, request
 from flask_restful import Resource, Api
 import json
@@ -96,6 +96,7 @@ def index():
 
 @app.route('/list')
 def list():
+
     return jsonify(topList)
 
 if __name__ == '__main__':
